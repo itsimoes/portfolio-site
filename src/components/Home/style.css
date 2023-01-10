@@ -1,0 +1,14 @@
+.home-wrapper {
+    height: 90vh;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 5em;
+    /* margin: 0 auto;     */
+    margin-top: 0;
+    margin-bottom: 0;
+}

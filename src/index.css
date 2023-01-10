@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/bg.jpg');
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*-- media query --*/
+
+@media screen and (max-width: 991px) {
+  .body {
+    background-image: linear-gradient(0deg, #000, transparent 70%, transparent), url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg);
+    background-position: 0 0, 64% 50%;
+    background-size: auto;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+  }
 }
