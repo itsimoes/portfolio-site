@@ -7,10 +7,10 @@ import './style.css'
 const Home = () => {
   return (
     <Container className='home-wrapper'>
-        <h1>Olá, eu sou Ítalo Simões.</h1>
+        <h1 className='presentation'>Olá, eu sou Ítalo Simões.</h1>
         <h2 className='title'>Desenvolvedor web</h2>
-        <h3>Com foco no desenvolvimento FrontEnd, <br/> Criativo e que prima pela acessibilidade na web.</h3>
-        {/* <Link to="/">Saiba mais...</Link> */}
+        <h3 className='resume'>Com foco no desenvolvimento FrontEnd, <br/> Criativo e que prima pela acessibilidade na web.</h3>
+        <Link to="/" className='links'>Saiba mais {'>>'}</Link>
     </Container>
   )
 }
