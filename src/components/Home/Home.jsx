@@ -6,7 +6,7 @@ import './style.css'
 
 const Home = () => {
   return (
-    <Container className='home-wrapper'>
+    <Container className='wrapper'>
         <h1 className='presentation'>Olá, eu sou Ítalo Simões.</h1>
         <h2 className='title'>Desenvolvedor web</h2>
         <h3 className='resume'>Com foco no desenvolvimento FrontEnd, <br/> Criativo e que prima pela acessibilidade na web.</h3>

@@ -7,7 +7,8 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/bg.jpg');
+  /* background-image: url('./assets/bg.jpg'); */
+  background-color: #222;
   background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,10 +25,39 @@ code {
 
 @media screen and (max-width: 991px) {
   .body {
-    background-image: linear-gradient(0deg, #000, transparent 70%, transparent), url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg);
+    /* background-image: linear-gradient(0deg, #000, transparent 70%, transparent), url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg); */
     background-position: 0 0, 64% 50%;
     background-size: auto;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, fixed;
   }
 }
+
+/*-- global styles --*/
+
+.wrapper {
+  height: 90vh;  
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;      
+}
+
+.title {
+  font-size: 4em;    
+  margin-top: 0;
+  margin-bottom: 0;   
+  font-weight: 500;       
+}
+
+.links {
+  color: springgreen;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+p {
+  width: 60%;
+  font-weight: 300;
+}
+

@@ -1,27 +1,7 @@
-.home-wrapper {
-    height: 90vh;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;        
-}
-
 .presentation {
     font-weight: 300;  
 }
 
-.title {
-    font-size: 4em;    
-    margin-top: 0;
-    margin-bottom: 0;   
-    font-weight: 500;       
-}
-
 .resume {
     font-weight: 400;  
-}
-
-.links {
-    color: springgreen;
-    text-decoration: none;
 }
