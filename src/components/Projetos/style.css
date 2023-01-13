@@ -1,0 +1,100 @@
+.project-wrapper {
+    margin: 0 auto;
+    width: 100vw;
+    height: 500px;
+
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-wrapper p {
+    width: 100%;
+}
+
+.project-wrapper h1 {
+    font-weight: 400;
+}
+
+#proj-p {
+    text-align: left;
+
+}
+
+.content {
+    display: flex !important;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.thumbnail {
+    width: 300px;
+}
+
+.project-link {
+    display: flex !important;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.project-link p {
+    width: 100%;
+}
+
+span {
+    color: springgreen;
+    font-weight: 400;
+}
+
+.project-wrapper img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 375px) {
+    .project-wrapper img {
+        margin-top: 20px;
+    }
+}
+
+/*-- Project IDs Attributes --*/
+#countdown {
+    background: radial-gradient(blueviolet, #222);
+}
+
+#countdown img:hover {
+    box-shadow: 5px 5px 5px purple;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+#pokedex {
+    background: radial-gradient(darkred, #222);
+}
+
+#pokedex img:hover {
+    box-shadow: 5px 5px 5px red;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+
+}
+
+.big-arrow {
+    font-size: 40px;
+}
