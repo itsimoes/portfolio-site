@@ -12,7 +12,7 @@ const About = () => {
       <p>
         Natural do estado do Maranhão, graduado pela
         Universidade Federal do Maranhão {"("}UFMA{")"} no curso de Ciência da Computação,
-        venho atuando no desenvolvimento web Front-End desde 2021.
+        venho atuando no desenvolvimento web Front-end desde 2021.
       </p>
       <p>
         Utilizando como principais tecnologias ReactJS, AngularJS, Javascript, Typescript,
