@@ -4,4 +4,12 @@
 
 .resume {
     font-weight: 400;  
+    width: 60%;
 }
+
+@media screen and (max-width: 375px) {
+    .resume {        
+        width: 100%;      
+    }
+  }
+  
