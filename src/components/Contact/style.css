@@ -1,0 +1,58 @@
+.form-wrapper {
+    width: 50%;    
+}
+@media screen and (max-width: 791px) {
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textField {
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    outline: none;
+    border: 0;
+}
+
+textarea {
+    min-height: 100px;
+    height: auto;
+    padding-top: 15px;
+}
+
+.contact-button {
+    height: 40px;
+    width: 50%;
+    align-self: center;
+    background-color:  rgb(44, 44, 44);
+    color: springgreen;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.contact-button:hover {
+    background-color: springgreen;
+    color: rgb(44, 44, 44);    
+
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+}

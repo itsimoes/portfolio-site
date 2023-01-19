@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className='presentation'>Olá, eu sou Ítalo Simões.</h1>
         <h2 className='title'>Desenvolvedor web</h2>
         <h3 className='resume'>Com foco no desenvolvimento Front-end, criativo e que prima pela acessibilidade na web.</h3>
-        <Link to="/about" className='links'>Saiba mais {'>>'}</Link>
+        <Link to="/sobre" className='links'>Saiba mais {'>>'}</Link>
     </Container>
   )
 }
