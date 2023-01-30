@@ -10,12 +10,7 @@ const UserForm = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-
-  // const handleSubmitForm = (e) => {
-  //   e.preventDefault()
-
-  //   console.log({ name, email, message })
-  // }
+  
 
   return (
     <div className='form'>
@@ -30,13 +25,14 @@ const UserForm = () => {
       />
 
       <label >Email:</label>
-      <input
+      <input        
         className='textField'
-        type="text"
+        type="email"
         placeholder='Digite seu email'
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+       
       />
       <label >Mensagem:</label>
       <textarea
@@ -51,4 +47,4 @@ const UserForm = () => {
   )
 }
 
-export default UserForm
+export default UserForm 
