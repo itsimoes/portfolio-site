@@ -2,22 +2,21 @@ import { Container } from "@mui/system";
 import React from "react";
 import "./style.css";
 import { useState } from "react";
-
-//Form components
-// import UserForm from "./UserForm";
-// import Thanks from "./Thanks";
+import { useForm, ValidationError } from "@formspree/react";
+import { red } from "@mui/material/colors";
 
 const Contact = () => {
-  //   const formComponents = [<UserForm />, <Thanks />];
-  //   const [currentStep, setCurrentStep] = useState(formComponents[0]);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const changeStep = (e, form, button, thanks) => {
-    e.preventDefault();
-    // setCurrentStep(formComponents[1]);
+  const [state, handleSubmit] = useForm("xayzqblp");
+
+  const divStyle = {
+    color: red    
+  }
+
+  const changeStep = (form, button, thanks) => {
     document.getElementById(form).style.display = "none";
     document.getElementById(button).style.display = "none";
     document.getElementById(thanks).style.display = "block";
@@ -25,6 +24,10 @@ const Contact = () => {
     console.log(email);
     console.log(message);
   };
+
+  if (state.succeeded) {
+    changeStep("contact-button", "contact-form", "thanks");
+  }
 
   return (
     <Container className="wrapper">
@@ -40,15 +43,14 @@ const Contact = () => {
         <form
           className="form"
           id="contact-form"
-          action="submit"
-          onSubmit={(e) =>
-            changeStep(e, "contact-button", "contact-form", "thanks")
-          }
+          method="POST"
+          onSubmit={handleSubmit}
         >
           <label>Nome:</label>
           <input
             className="textField"
             type="text"
+            name="nome"
             placeholder="Digite seu nome"
             required
             value={name}
@@ -58,20 +60,30 @@ const Contact = () => {
           <label>Email:</label>
           <input
             className="textField"
+            id="email"
             type="email"
+            name="email"
             placeholder="Digite seu email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+          <ValidationError prefix="Email" field="email"  errors={state.errors} style={divStyle}/>
           <label>Mensagem:</label>
           <textarea
             className="textField"
+            id="message"
             type="text-area"
+            name="message"
             placeholder="Digite sua mensagem"
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
           />
           {/* {currentStep} */}
           <button
@@ -80,6 +92,7 @@ const Contact = () => {
             type="submit"
             form="contact-form"
             value="Enviar"
+            disabled={state.submitting}
           >
             Enviar
           </button>

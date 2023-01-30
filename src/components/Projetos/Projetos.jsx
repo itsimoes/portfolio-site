@@ -19,24 +19,24 @@ const Projetos = () => {
       </Container>
       <section id='countdown' className='project-wrapper'>
         <Container className='content'>
-          <a href='https://github.com/itsimoes/countdown-timer' target='_blank' className='project-link'>
+          <a href='https://github.com/itsimoes/countdown-timer' target='_blank' rel="noreferrer" className='project-link'>
             <h1>Countdown Timer</h1>
             <p>Projeto de Timer de contagem regressiva criado em ReactJS.</p>
             <span>Saiba mais {'>>'}</span>
           </a>
-          <a href='https://github.com/itsimoes/countdown-timer' target='_blank' className='project-link'>
+          <a href='https://github.com/itsimoes/countdown-timer' target='_blank' rel="noreferrer" className='project-link'>
             <img className='thumbnail' src={Countdown} />
           </a>
         </Container>
       </section>
       <div id='pokedex' className='project-wrapper'>
         <Container className='content'>
-          <a href='https://github.com/itsimoes/pokedex' target='_blank' className='project-link'>
+          <a href='https://github.com/itsimoes/pokedex' target='_blank'rel="noreferrer" className='project-link'>
             <h1>Pokedex</h1>
             <p>Projeto de Pokedex criado em ReactJS com utlização de API.</p>
             <span>Saiba mais {'>>'}</span>
           </a>
-          <a href='https://github.com/itsimoes/pokedex' target='_blank' className='project-link'>
+          <a href='https://github.com/itsimoes/pokedex' target='_blank' rel="noreferrer" className='project-link'>
             <img className='thumbnail' src={Pokedex} />
           </a>
         </Container>
