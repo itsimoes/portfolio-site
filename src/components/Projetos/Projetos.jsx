@@ -29,7 +29,7 @@ const Projetos = () => {
           </a>
         </Container>
       </section>
-      <div id='pokedex' className='project-wrapper'>
+      <section id='pokedex' className='project-wrapper'>
         <Container className='content'>
           <a href='https://github.com/itsimoes/pokedex' target='_blank'rel="noreferrer" className='project-link'>
             <h1>Pokedex</h1>
@@ -40,7 +40,7 @@ const Projetos = () => {
             <img className='thumbnail' src={Pokedex} />
           </a>
         </Container>
-      </div>
+      </section>
     </div >
   )
 }
