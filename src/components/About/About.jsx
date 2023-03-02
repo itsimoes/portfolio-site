@@ -21,13 +21,13 @@ const About = () => {
         utilizar as aplicações de acordo com sua necessidade.</p>
       <p>
         Busco sempre eficiência e simplicidade na criação de projetos para que sua utilização
-        seja intuitiva, eficaz e prazerosa por parte dos usuários.
+        seja intuitiva, eficaz e prazerosa por parte dos usuários. <Link to="/projetos" className='links'>Veja alguns de meus projetos</Link>.
       </p>
       <p>
         Já trabalhei em projetos próprios e com times de desenvolvimento de múltiplos países, sempre buscando
         integração e agilidade para que os processos possam fluir com mais facilidade e velocidade.
       </p>
-      <p>Tem interesse em criarmos um projeto juntos? <Link to="/contato" className='links'>Vamos conversar.</Link></p>
+      <p>Tem interesse em criarmos um projeto juntos? <Link to="/contato" className='links'>Vamos conversar</Link>.</p>
     </Container>
   )
 }

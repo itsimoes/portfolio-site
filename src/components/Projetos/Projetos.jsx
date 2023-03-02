@@ -5,9 +5,8 @@ import { HashLink as Link } from "react-router-hash-link";
 import Countdown from "../../assets/countdown.png";
 import Pokedex from "../../assets/pokedex.png";
 import Blog from "../../assets/blog.png";
-import Switch from "../../assets/swotch.png";
+import Swotch from "../../assets/swotch.png";
 import Jbl from "../../assets/jbl.png";
-
 
 const Projetos = () => {
   const scrollWithOffset = (el) => {
@@ -17,171 +16,47 @@ const Projetos = () => {
   };
 
   return (
-    <div>
-      <Container className="wrapper">
-        <div className="project-head">
-          <h1 className="title">Principais projetos</h1>
-          <p id="proj-p">
-            Projetos pessoais que desenvolvi com carinho e dedicação utilizando
-            as mais atuais ferramentas de desenvolvimento.
-          </p>
-        </div>
-        <div className="thumb-wrapper">
-          <div className="thumb-box-wrapper">
-            <Link
-              to="#reactjs"
-              className="project-link"
-              smooth="true"
-              scroll={(el) => scrollWithOffset(el)}
-            >
-              <p>Projetos ReactJS</p>
-              {/* <span className="big-arrow">{"︾"}</span> */}
-              <div className="react-thumb-wrapper">
-                <img className="thumbnail" src={Countdown} />
-                <img className="thumbnail" src={Pokedex} />
-              </div>
-            </Link>
+    <Container className="content-wrapper">
+      <div className="project-wrapper">
+        <h1 className="title">Projetos</h1>
+        <p>
+          Projetos que desenvolvi utilizando as tecnologias mais atuais de
+          desenvolvimento web. Vamos desenvolver um projeto juntos? <Link to="/contato" className='links'>Entre em contato</Link>.
+        </p>        
+      </div>
+
+      <div>
+        <div>
+          <h4>Projetos ReactJS</h4>
+          <div className="card-wrapper">
+            <div className="card">
+              <a href="https://github.com/itsimoes/countdown-timer" target="_blank" alt="" rel="noreferrer">
+                <img className="thumb" src={Countdown} />
+              </a>
+              <p>Countdown Timer</p>
+            </div>
+            <div className="card">
+              <a href="https://github.com/itsimoes/pokedex" target="_blank" alt="" rel="noreferrer">
+                <img className="thumb" src={Pokedex} />
+              </a>
+              <p>Pokedex</p>
+            </div>
           </div>
-          <div className="thumb-box-wrapper">
-            <Link
-              to="#wordpress"
-              className="project-link"
-              smooth="true"
-              scroll={(el) => scrollWithOffset(el)}
-            >
-              <p>Landing pages</p>
-              {/* <span className="big-arrow">{"︾"}</span> */}
-              <div className="react-thumb-wrapper">
-                <img className="thumbnail" src={Blog} />
-                <img className="thumbnail" src={Switch} />
+
+          <div>
+            <h4>Landing pages</h4>
+            <div className="card-wrapper">
+              <div className="card">
+                <a href="https://github.com/itsimoes/LP-blog-soon" target="_blank" alt="" rel="noreferrer">
+                  <img className="thumb" src={Blog} />
+                </a>
+                <p>Travel Blog</p>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
-      </Container>
-      <section id="reactjs">
-        <Container>
-          <h2>Projetos ReactJS</h2>
-        </Container>
-        <div id="countdown" className="project-wrapper">
-          <Container className="content">
-            <a
-              href="https://github.com/itsimoes/countdown-timer"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <h1>Countdown Timer</h1>
-              <p>Projeto de Timer de contagem regressiva criado em ReactJS.</p>
-              <span>Saiba mais {">>"}</span>
-            </a>
-            <a
-              href="https://github.com/itsimoes/countdown-timer"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <img className="thumbnail" src={Countdown} />
-            </a>
-          </Container>
-        </div>
-
-        <div id="pokedex" className="project-wrapper">
-          <Container className="content">
-            <a
-              href="https://github.com/itsimoes/pokedex"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <h1>Pokedex</h1>
-              <p>Projeto de Pokedex criado em ReactJS com utlização de API.</p>
-              <span>Saiba mais {">>"}</span>
-            </a>
-            <a
-              href="https://github.com/itsimoes/pokedex"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <img className="thumbnail" src={Pokedex} />
-            </a>
-          </Container>
-        </div>
-      </section>
-      <section id="wordpress">
-        <Container>
-          <h2>Landing Pages</h2>
-        </Container>
-        <div id="blog" className="project-wrapper">
-          <Container className="content">
-            <a
-              href="https://github.com/itsimoes/LP-blog-soon"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <h1>Travel Blog</h1>
-              <p>Projeto de Landing page de um Blog de viagens.</p>
-              <span>Saiba mais {">>"}</span>
-            </a>
-            <a
-              href="https://github.com/itsimoes/LP-blog-soon"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <img className="thumbnail" src={Blog} />
-            </a>
-          </Container>
-        </div>
-
-        <div id="swotch" className="project-wrapper">
-          <Container className="content">
-            <a
-              href="https://github.com/itsimoes/LP-nontendo-swotch"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <h1>Nontendo Swotch</h1>
-              <p>Projeto de Landing page de anúncio de videogame.</p>
-              <span>Saiba mais {">>"}</span>
-            </a>
-            <a
-              href="https://github.com/itsimoes/LP-nontendo-swotch"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <img className="thumbnail" src={Switch} />
-            </a>
-          </Container>
-        </div>
-        <div id="tech" className="project-wrapper">
-          <Container className="content">
-            <a
-              href="https://github.com/itsimoes/LP-tech-product"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <h1>Tech Product</h1>
-              <p>Projeto de Landing page de um produto de tecnologia.</p>
-              <span>Saiba mais {">>"}</span>
-            </a>
-            <a
-              href="https://github.com/itsimoes/LP-tech-product"
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <img className="thumbnail" src={Jbl} />
-            </a>
-          </Container>
-        </div>
-      </section>
-    </div>
+      </div>
+    </Container>
   );
 };
 
