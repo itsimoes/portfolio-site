@@ -4,6 +4,10 @@ import "./style.css";
 import { HashLink as Link } from "react-router-hash-link";
 import Countdown from "../../assets/countdown.png";
 import Pokedex from "../../assets/pokedex.png";
+import Blog from "../../assets/blog.png";
+import Switch from "../../assets/swotch.png";
+import Jbl from "../../assets/jbl.png";
+
 
 const Projetos = () => {
   const scrollWithOffset = (el) => {
@@ -45,11 +49,11 @@ const Projetos = () => {
               smooth="true"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <p>Projetos Wordpress</p>
+              <p>Landing pages</p>
               {/* <span className="big-arrow">{"︾"}</span> */}
               <div className="react-thumb-wrapper">
-                <img className="thumbnail" src={Countdown} />
-                <img className="thumbnail" src={Pokedex} />
+                <img className="thumbnail" src={Blog} />
+                <img className="thumbnail" src={Switch} />
               </div>
             </Link>
           </div>
@@ -59,7 +63,7 @@ const Projetos = () => {
         <Container>
           <h2>Projetos ReactJS</h2>
         </Container>
-        <div className="project-wrapper countdown">
+        <div id="countdown" className="project-wrapper">
           <Container className="content">
             <a
               href="https://github.com/itsimoes/countdown-timer"
@@ -107,50 +111,72 @@ const Projetos = () => {
       </section>
       <section id="wordpress">
         <Container>
-          <h2>Projetos Wordpress</h2>
+          <h2>Landing Pages</h2>
         </Container>
-        <div className="project-wrapper countdown">
+        <div id="blog" className="project-wrapper">
           <Container className="content">
             <a
-              href="https://github.com/itsimoes/countdown-timer"
+              href="https://github.com/itsimoes/LP-blog-soon"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              <h1>Em breve...</h1>
-              <p>Em breve...</p>
+              <h1>Travel Blog</h1>
+              <p>Projeto de Landing page de um Blog de viagens.</p>
               <span>Saiba mais {">>"}</span>
             </a>
             <a
-              href="https://github.com/itsimoes/countdown-timer"
+              href="https://github.com/itsimoes/LP-blog-soon"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              <img className="thumbnail" src={Countdown} />
+              <img className="thumbnail" src={Blog} />
             </a>
           </Container>
         </div>
 
-        <div id="pokedex" className="project-wrapper">
+        <div id="swotch" className="project-wrapper">
           <Container className="content">
             <a
-              href="https://github.com/itsimoes/pokedex"
+              href="https://github.com/itsimoes/LP-nontendo-swotch"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              <h1>Em breve...</h1>
-              <p>Em breve...</p>
+              <h1>Nontendo Swotch</h1>
+              <p>Projeto de Landing page de anúncio de videogame.</p>
               <span>Saiba mais {">>"}</span>
             </a>
             <a
-              href="https://github.com/itsimoes/pokedex"
+              href="https://github.com/itsimoes/LP-nontendo-swotch"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              <img className="thumbnail" src={Pokedex} />
+              <img className="thumbnail" src={Switch} />
+            </a>
+          </Container>
+        </div>
+        <div id="tech" className="project-wrapper">
+          <Container className="content">
+            <a
+              href="https://github.com/itsimoes/LP-tech-product"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              <h1>Tech Product</h1>
+              <p>Projeto de Landing page de um produto de tecnologia.</p>
+              <span>Saiba mais {">>"}</span>
+            </a>
+            <a
+              href="https://github.com/itsimoes/LP-tech-product"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              <img className="thumbnail" src={Jbl} />
             </a>
           </Container>
         </div>
