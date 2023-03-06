@@ -8,12 +8,7 @@ import Blog from "../../assets/blog.png";
 import Swotch from "../../assets/swotch.png";
 import Jbl from "../../assets/jbl.png";
 
-const Projetos = () => {
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -80;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
+const Projetos = () => { 
 
   return (
     <Container className="content-wrapper">
@@ -40,7 +35,7 @@ const Projetos = () => {
                 alt=""
                 rel="noreferrer"
               >
-                <img className="thumb" src={Countdown} />
+                <img className="thumb" src={Countdown} alt="" />
               </a>
               <p>Countdown Timer</p>
             </div>
@@ -51,7 +46,7 @@ const Projetos = () => {
                 alt=""
                 rel="noreferrer"
               >
-                <img className="thumb" src={Pokedex} />
+                <img className="thumb" src={Pokedex} alt="" />
               </a>
               <p>Pokedex</p>
             </div>
@@ -66,7 +61,7 @@ const Projetos = () => {
                 alt=""
                 rel="noreferrer"
               >
-                <img className="thumb" src={Blog} />
+                <img className="thumb" src={Blog} alt="" />
               </a>
               <p>Travel Blog</p>
             </div>
@@ -77,7 +72,7 @@ const Projetos = () => {
                 alt=""
                 rel="noreferrer"
               >
-                <img className="thumb" src={Jbl} />
+                <img className="thumb" src={Jbl} alt="" />
               </a>
               <p>Tech Product</p>
             </div>
@@ -88,7 +83,7 @@ const Projetos = () => {
                 alt=""
                 rel="noreferrer"
               >
-                <img className="thumb" src={Swotch} />
+                <img className="thumb" src={Swotch} alt="" />
               </a>
               <p>Videogame</p>
             </div>
