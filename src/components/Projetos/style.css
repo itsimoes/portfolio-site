@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;    
+    border-radius: 5px;
 }
 .card:hover .thumb {
     width: 310px;

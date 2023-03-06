@@ -29,9 +29,9 @@ const About = () => {
         to="/projetos"
         variant="contained"
         sx={{
-          bgcolor: "#222",
+          bgcolor: "rgb(44, 44, 44);",
           color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "#222" },
+          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
           fontWeight: "560",
           textTransform: "none",
         }}
@@ -49,9 +49,9 @@ const About = () => {
         to="/contato"
         variant="contained"
         sx={{
-          bgcolor: "#222",
+          bgcolor: "rgb(44, 44, 44);",
           color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "#222" },
+          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
           fontWeight: "560",
           textTransform: "none",
         }}

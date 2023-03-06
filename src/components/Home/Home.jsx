@@ -2,6 +2,7 @@ import { Button, Container } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import Avatar from "../../assets/avatar.png"
 
 const Home = () => {
   return (
@@ -17,16 +18,17 @@ const Home = () => {
         to="/sobre"
         variant="contained"
         sx={{
-          bgcolor: "#222",
+          bgcolor: "rgb(44, 44, 44);",
           color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "#222" },
+          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
           fontWeight: "560",
           textTransform: "none",
         }}
       >
         Saiba mais
       </Button>
-    </Container>
+      <img className="avatar" src={Avatar} alt=""  />     
+      </Container>
   );
 };
 

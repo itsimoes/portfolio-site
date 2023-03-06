@@ -7,8 +7,10 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('./assets/bg.jpg'); */
-  background: radial-gradient(black, #222);
+  /* background-image: url('./assets/bg.png'); */
+  /* background-image: linear-gradient(0deg, #000, transparent 500%, transparent);  */
+  /* background: radial-gradient(black, #222); */
+  background: linear-gradient(to bottom,rgba(0,0,0, 0), rgba(0,0,0, 0.5)),url('./assets/bg.png');
   background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +27,7 @@ code {
 
 @media screen and (max-width: 991px) {
   .body {
-    /* background-image: linear-gradient(0deg, #000, transparent 70%, transparent), url(https://uploads-ssl.webflow.com/591e9525f13786217f2e347e/5b47654a49f3e1543ba2a603_180712%20-%20background.jpg); */
+    /* background-image: linear-gradient(0deg, #000, transparent 70%, transparent), url("./assets/bg.png");  */
     background-position: 0 0, 64% 50%;
     background-size: auto;
     background-repeat: repeat, no-repeat;
