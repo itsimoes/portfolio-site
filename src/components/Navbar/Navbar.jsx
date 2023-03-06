@@ -115,7 +115,8 @@ const Navbar = () => {
             to="/"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", md: "none" }, 
+              flexDirection: "row",      
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,

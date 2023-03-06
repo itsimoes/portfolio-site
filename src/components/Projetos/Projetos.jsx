@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Button, Container } from "@mui/material";
 import React from "react";
 import "./style.css";
 import { HashLink as Link } from "react-router-hash-link";
@@ -8,22 +8,32 @@ import Blog from "../../assets/blog.png";
 import Swotch from "../../assets/swotch.png";
 import Jbl from "../../assets/jbl.png";
 
-const Projetos = () => { 
-
+const Projetos = () => {
   return (
     <Container className="content-wrapper">
       <div className="project-wrapper">
         <h1 className="title">Projetos</h1>
         <p>
           Projetos que desenvolvi utilizando as tecnologias mais atuais de
-          desenvolvimento web. Vamos desenvolver um projeto juntos?{" "}
-          <Link to="/contato" className="links">
-            Entre em contato
-          </Link>
-          .
+          desenvolvimento web. Vamos desenvolver um projeto juntos?
         </p>
+        <Button
+        className="proj-button"
+          component={Link}
+          to="/contato"
+          variant="contained"
+          sx={{
+            bgcolor: "#222",
+            color: "springgreen",
+            ":hover": { bgcolor: "springgreen", color: "#222" },
+            fontWeight: "560",
+            textTransform: "none",
+            width: "160px"
+          }}
+        >
+          Entre em contato
+        </Button>
       </div>
-
       <div>
         <div>
           <h4>Projetos ReactJS</h4>

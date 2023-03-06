@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 540px) {
     .project-wrapper p {
-        width: 100%;        
+        width: 100%;              
     }
 
     .card-wrapper {
@@ -63,5 +63,8 @@
     .card {
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+    .proj-button {
+        align-self: center;
     }
 }
