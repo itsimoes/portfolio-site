@@ -10,6 +10,9 @@
     color: aliceblue;
     font-size: 0.8em;
 }
+.link:hover {
+    color: springgreen;
+}
 
 .MuiMenu-root ul{
   background-color: #222;  

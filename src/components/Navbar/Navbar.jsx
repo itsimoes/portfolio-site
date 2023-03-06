@@ -28,14 +28,14 @@ const Navbar = () => {
       <Container>
         <Toolbar disableGutters>
           <Link
-            to="/"
+            to="/"            
             style={{
               textDecoration: "none",
               color: "inherit",
-              display: "flex",
+              display: "flex",                          
             }}
           >
-            <MenuItem>
+            <MenuItem sx ={{":hover": {color: "springgreen"}  }}>
               <AllInclusive
                 sx={{
                   display: { xs: "none", md: "flex" },
@@ -123,7 +123,7 @@ const Navbar = () => {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
-              background: "#222",
+              background: "#222",              
             }}
           >
             <AllInclusive sx={{ display: { xs: "flex", md: "none" }, mr: 1, color: "aliceblue",
@@ -140,7 +140,7 @@ const Navbar = () => {
                 letterSpacing: ".3rem",                
                 background: "#222",
                 color: "aliceblue",
-                textDecoration: "none",
+                textDecoration: "none",                
               }}
             >
               IT.
