@@ -21,8 +21,12 @@ const Projetos = () => {
         <h1 className="title">Projetos</h1>
         <p>
           Projetos que desenvolvi utilizando as tecnologias mais atuais de
-          desenvolvimento web. Vamos desenvolver um projeto juntos? <Link to="/contato" className='links'>Entre em contato</Link>.
-        </p>        
+          desenvolvimento web. Vamos desenvolver um projeto juntos?{" "}
+          <Link to="/contato" className="links">
+            Entre em contato
+          </Link>
+          .
+        </p>
       </div>
 
       <div>
@@ -30,28 +34,63 @@ const Projetos = () => {
           <h4>Projetos ReactJS</h4>
           <div className="card-wrapper">
             <div className="card">
-              <a href="https://github.com/itsimoes/countdown-timer" target="_blank" alt="" rel="noreferrer">
+              <a
+                href="https://github.com/itsimoes/countdown-timer"
+                target="_blank"
+                alt=""
+                rel="noreferrer"
+              >
                 <img className="thumb" src={Countdown} />
               </a>
               <p>Countdown Timer</p>
             </div>
             <div className="card">
-              <a href="https://github.com/itsimoes/pokedex" target="_blank" alt="" rel="noreferrer">
+              <a
+                href="https://github.com/itsimoes/pokedex"
+                target="_blank"
+                alt=""
+                rel="noreferrer"
+              >
                 <img className="thumb" src={Pokedex} />
               </a>
               <p>Pokedex</p>
             </div>
           </div>
 
-          <div>
-            <h4>Landing pages</h4>
-            <div className="card-wrapper">
-              <div className="card">
-                <a href="https://github.com/itsimoes/LP-blog-soon" target="_blank" alt="" rel="noreferrer">
-                  <img className="thumb" src={Blog} />
-                </a>
-                <p>Travel Blog</p>
-              </div>
+          <h4>Landing pages</h4>
+          <div className="card-wrapper">
+            <div className="card">
+              <a
+                href="https://github.com/itsimoes/LP-blog-soon"
+                target="_blank"
+                alt=""
+                rel="noreferrer"
+              >
+                <img className="thumb" src={Blog} />
+              </a>
+              <p>Travel Blog</p>
+            </div>
+            <div className="card">
+              <a
+                href="https://github.com/itsimoes/LP-tech-product"
+                target="_blank"
+                alt=""
+                rel="noreferrer"
+              >
+                <img className="thumb" src={Jbl} />
+              </a>
+              <p>Tech Product</p>
+            </div>
+            <div className="card">
+              <a
+                href="https://github.com/itsimoes/LP-nontendo-swotch"
+                target="_blank"
+                alt=""
+                rel="noreferrer"
+              >
+                <img className="thumb" src={Swotch} />
+              </a>
+              <p>Videogame</p>
             </div>
           </div>
         </div>

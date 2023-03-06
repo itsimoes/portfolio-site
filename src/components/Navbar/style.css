@@ -10,3 +10,10 @@
     color: aliceblue;
     font-size: 0.8em;
 }
+
+.MuiMenu-root ul{
+  background-color: #222;  
+}
+a {
+    text-decoration: none;
+}

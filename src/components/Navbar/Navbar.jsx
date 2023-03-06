@@ -85,27 +85,28 @@ const Navbar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
-              }}
+                display: { xs: "block", md: "none" },                
+              }}  
+                          
             >
-              <MenuItem>
+              <MenuItem sx={{backgroundColor: "#222"}}>
                 <Typography>
-                  <Link to="/">Início</Link>
+                  <Link to="/" style={{ textDecoration: "none", color: 'springgreen'}}>Início</Link>
                 </Typography>
               </MenuItem>
               <MenuItem>
                 <Typography>
-                  <Link to="/sobre">Sobre</Link>
+                  <Link to="/sobre" style={{ textDecoration: "none", color: 'springgreen'}}>Sobre</Link>
                 </Typography>
               </MenuItem>
               <MenuItem>
                 <Typography>
-                  <Link to="/projetos">Projetos</Link>
+                  <Link to="/projetos" style={{ textDecoration: "none", color: 'springgreen'}}>Projetos</Link>
                 </Typography>
               </MenuItem>
               <MenuItem>
                 <Typography>
-                  <Link to="/contato">Contato</Link>
+                  <Link to="/contato" style={{ textDecoration: "none", color: 'springgreen'}}>Contato</Link>
                 </Typography>
               </MenuItem>
             </Menu>
@@ -124,7 +125,8 @@ const Navbar = () => {
               background: "#222",
             }}
           >
-            <AllInclusive sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <AllInclusive sx={{ display: { xs: "flex", md: "none" }, mr: 1, color: "aliceblue",
+                textDecoration: "none", }} />
             <Typography
               variant="h5"
               noWrap              
@@ -134,10 +136,10 @@ const Navbar = () => {
                 flexGrow: 1,
                 fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                letterSpacing: ".3rem",                
                 background: "#222",
+                color: "aliceblue",
+                textDecoration: "none",
               }}
             >
               IT.
