@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/itsimoes/new-portfolio/static/css/main.c11d711a.css",
+    "main.js": "/itsimoes/new-portfolio/static/js/main.5e13f0ab.js",
+    "static/js/787.1ed0c42c.chunk.js": "/itsimoes/new-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/blog.png": "/itsimoes/new-portfolio/static/media/blog.1753e085fe6b285775a2.png",
+    "static/media/jbl.png": "/itsimoes/new-portfolio/static/media/jbl.2210a76e3c6ef08391b5.png",
+    "static/media/swotch.png": "/itsimoes/new-portfolio/static/media/swotch.7c8b967249216a0912d0.png",
+    "static/media/bg.png": "/itsimoes/new-portfolio/static/media/bg.b03c4b5e73a81f2ab0c9.png",
+    "static/media/avatar.png": "/itsimoes/new-portfolio/static/media/avatar.1ac78e49d65d357e5138.png",
+    "static/media/countdown.png": "/itsimoes/new-portfolio/static/media/countdown.c9bc6f0487ab79a86580.png",
+    "static/media/pokedex.png": "/itsimoes/new-portfolio/static/media/pokedex.f27a84c972a387fe8ea5.png",
+    "index.html": "/itsimoes/new-portfolio/index.html",
+    "main.c11d711a.css.map": "/itsimoes/new-portfolio/static/css/main.c11d711a.css.map",
+    "main.5e13f0ab.js.map": "/itsimoes/new-portfolio/static/js/main.5e13f0ab.js.map",
+    "787.1ed0c42c.chunk.js.map": "/itsimoes/new-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c11d711a.css",
+    "static/js/main.5e13f0ab.js"
+  ]
+}
