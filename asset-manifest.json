@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2406195b.css",
-    "main.js": "/static/js/main.c73cb970.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/blog.png": "/static/media/blog.1753e085fe6b285775a2.png",
-    "static/media/jbl.png": "/static/media/jbl.2210a76e3c6ef08391b5.png",
-    "static/media/swotch.png": "/static/media/swotch.7c8b967249216a0912d0.png",
-    "static/media/bg.png": "/static/media/bg.b03c4b5e73a81f2ab0c9.png",
-    "static/media/avatar.png": "/static/media/avatar.1ac78e49d65d357e5138.png",
-    "static/media/countdown.png": "/static/media/countdown.c9bc6f0487ab79a86580.png",
-    "static/media/pokedex.png": "/static/media/pokedex.f27a84c972a387fe8ea5.png",
-    "index.html": "/index.html",
-    "main.2406195b.css.map": "/static/css/main.2406195b.css.map",
-    "main.c73cb970.js.map": "/static/js/main.c73cb970.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/itsimoes/portfolio-site/static/css/main.0432d93e.css",
+    "main.js": "/itsimoes/portfolio-site/static/js/main.affc1525.js",
+    "static/js/787.1ed0c42c.chunk.js": "/itsimoes/portfolio-site/static/js/787.1ed0c42c.chunk.js",
+    "static/media/blog.png": "/itsimoes/portfolio-site/static/media/blog.1753e085fe6b285775a2.png",
+    "static/media/jbl.png": "/itsimoes/portfolio-site/static/media/jbl.2210a76e3c6ef08391b5.png",
+    "static/media/swotch.png": "/itsimoes/portfolio-site/static/media/swotch.7c8b967249216a0912d0.png",
+    "static/media/bg.png": "/itsimoes/portfolio-site/static/media/bg.b03c4b5e73a81f2ab0c9.png",
+    "static/media/avatar.png": "/itsimoes/portfolio-site/static/media/avatar.1ac78e49d65d357e5138.png",
+    "static/media/countdown.png": "/itsimoes/portfolio-site/static/media/countdown.c9bc6f0487ab79a86580.png",
+    "static/media/pokedex.png": "/itsimoes/portfolio-site/static/media/pokedex.f27a84c972a387fe8ea5.png",
+    "index.html": "/itsimoes/portfolio-site/index.html",
+    "main.0432d93e.css.map": "/itsimoes/portfolio-site/static/css/main.0432d93e.css.map",
+    "main.affc1525.js.map": "/itsimoes/portfolio-site/static/js/main.affc1525.js.map",
+    "787.1ed0c42c.chunk.js.map": "/itsimoes/portfolio-site/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2406195b.css",
-    "static/js/main.c73cb970.js"
+    "static/css/main.0432d93e.css",
+    "static/js/main.affc1525.js"
   ]
 }
