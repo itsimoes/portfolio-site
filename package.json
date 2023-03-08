@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://itsimoes.github.io/",
+  "homepage": "https://itsimoes.github.io/portfolio-site/",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.5",
