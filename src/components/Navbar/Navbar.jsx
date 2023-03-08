@@ -91,7 +91,7 @@ const Navbar = () => {
             >
               <MenuItem sx={{backgroundColor: "#222"}}>
                 <Typography>
-                  <Link to="/portfolio-site" style={{ textDecoration: "none", color: 'springgreen'}}>Início</Link>
+                  <Link to="/" style={{ textDecoration: "none", color: 'springgreen'}}>Início</Link>
                 </Typography>
               </MenuItem>
               <MenuItem>
@@ -149,7 +149,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <MenuItem sx={{ my: 2, color: "white", display: "block" }}>
               <Typography>
-                <Link to="/portfolio-site" className="link">
+                <Link to="/" className="link">
                   Início
                 </Link>
               </Typography>
