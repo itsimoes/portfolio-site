@@ -1,31 +1,52 @@
-.form-wrapper {
-    width: 50%;    
-}
-@media screen and (max-width: 791px) {
-    .form-wrapper {
-        width: 100%;
-    }
+#vamos-conversar {
+    margin-bottom: 30px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 450px;
+    /* height: 450px; */
+    padding-top: 40px;
+    padding-bottom: 40px;    
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid springgreen;
+    border-radius: 10px;
+    background-color: rgb(19, 19, 19);    
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;    
+}
+
+#form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#thanks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;       
+    align-self: center;      
+}
+
+#thanks p {
+    font-size: large;
+    font-weight: 400;
+
+    width: auto;
 }
 
 .contact-p {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .textField {
-    height: 40px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: rgb(31, 31, 31);
-    color: white;
-    outline: none;
-    border: 0;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;   
 }
 
 textarea {
@@ -35,8 +56,9 @@ textarea {
 }
 
 .contact-button {
-    height: 40px;
-    width: 50%;
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
     align-self: center;
     background-color:  rgb(44, 44, 44);
     color: springgreen;
@@ -44,7 +66,7 @@ textarea {
     border-radius: 5px;
     font-weight: 600;
     font-size: 16px;
-
+    
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
@@ -52,7 +74,7 @@ textarea {
 .contact-button:hover {
     background-color: springgreen;
     color: rgb(44, 44, 44);    
-
+    cursor: pointer;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
@@ -65,6 +87,30 @@ textarea {
     color: lightgreen;
 }
 
-#thanks {
-    display: none;
+.socialmedia-wrapper {
+    display: flex;      
+    align-self: center;
+}
+.socialmedia-icon {    
+    color: aliceblue;
+    text-decoration: none !important;
+    font-size: 40px !important;
+    margin: 20px;
+    /* margin-top: 100px; */
+    
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.socialmedia-icon:hover {
+    color: springgreen;  
+    
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 510px) {
+    .form {
+        width: 80%;
+    }
 }

@@ -2,8 +2,14 @@ import { Container } from "@mui/system";
 import React from "react";
 import "./style.css";
 import { useState } from "react";
-import { useForm, ValidationError } from "@formspree/react";
-import { red } from "@mui/material/colors";
+import { ValidationError, useForm } from "@formspree/react";
+import { TextField } from "@mui/material";
+import { inputLabelClasses } from "@mui/material/InputLabel";
+
+//social media icons
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,80 +18,155 @@ const Contact = () => {
 
   const [state, handleSubmit] = useForm("xayzqblp");
 
-  const divStyle = {
-    color: red    
+  if (state.submitting && state.succeeded) {
+    console.log("enviado!");
+    console.log("submitting " + state.submitting);
+    console.log("suceeded " + state.succeeded);
+    document.getElementById("form-content").style.display = "none";
+    document.getElementById("thanks").style.display = "flex";
   }
 
-  const changeStep = (form, button, thanks) => {
-    document.getElementById(form).style.display = "none";
-    document.getElementById(button).style.display = "none";
-    document.getElementById(thanks).style.display = "block";
-    console.log(name);
-    console.log(email);
-    console.log(message);
-  };
+  function submitForm(e) {
+    // e.preventDefault();
+    // document.getElementById("form-content").style.display = "none";
+    // document.getElementById("thanks").style.display = "flex";
+    console.log("state = false");
+    console.log(state.succeeded);
+  }
 
-  if (state.succeeded) {
-    changeStep("contact-button", "contact-form", "thanks");
+  function backToForm(e) {
+    e.preventDefault();
+    document.getElementById("form-content").style.display = "flex";
+    document.getElementById("thanks").style.display = "none";
+
+    state.succeeded = false;
+    console.log("state = false");
   }
 
   return (
     <Container className="wrapper">
-      <h1 className="title">Vamos conversar.</h1>
-      <p className="contact-p">
-        Entre em contato preenchendo o formulário a seguir ou pelo email{" "}
-        <a href="mailto:itsimoes1@gmail.com?subject=Olá!" class="links">
-          itsimoes1@gmail.com
-        </a>
-        .
-      </p>
-      <div className="form-wrapper">
-        <form
-          className="form"
-          id="contact-form"
-          method="POST"
-          onSubmit={handleSubmit}
-        >
-          <label>Nome:</label>
-          <input
-            className="textField"
-            type="text"
+      <h1 id="vamos-conversar" className="title">
+        Vamos conversar.
+      </h1>
+      <form
+        id="contact-form"
+        className="form"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
+        <div id="form-content">
+          <p className="contact-p">
+            Entre em contato preenchendo o formulário a seguir ou pelo email{" "}
+            <a href="mailto:itsimoes1@gmail.com?subject=Olá!" class="links">
+              itsimoes1@gmail.com
+            </a>
+            .
+          </p>
+
+          <TextField
+            required //mudar o método de requerimento por uma função
             name="nome"
-            placeholder="Digite seu nome"
-            required
             value={name}
             onChange={(e) => setName(e.target.value)}
-          />
-
-          <label>Email:</label>
-          <input
             className="textField"
-            id="email"
+            label="Digite seu nome"
+            variant="outlined"
+            sx={{ bgcolor: "#222", borderRadius: "5px" }}
+            InputProps={{
+              sx: {
+                color: "aliceblue",
+                "&:hover fieldset": {
+                  border: "2px solid springgreen !important",
+                  borderRadius: "5px",
+                },
+                "&:focus-within fieldset, &:focus-visible fieldset": {
+                  border: "2px solid springgreen !important",
+                },
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                // set the color of the label when not shrinked
+                color: "gray",
+                [`&.${inputLabelClasses.shrink}`]: {
+                  // set the color of the label when shrinked (usually when the TextField is focused)
+                  color: "springgreen",
+                },
+              },
+            }}
+          />
+          <TextField
+            required //mudar o método de requerimento por uma função
             type="email"
             name="email"
-            placeholder="Digite seu email"
-            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          />
-          <ValidationError prefix="Email" field="email"  errors={state.errors} style={divStyle}/>
-          <label>Mensagem:</label>
-          <textarea
             className="textField"
-            id="message"
-            type="text-area"
+            label="Digite seu email"
+            variant="outlined"
+            sx={{ bgcolor: "#222", borderRadius: "5px" }}
+            InputProps={{
+              sx: {
+                color: "aliceblue",
+                "&:hover fieldset": {
+                  border: "2px solid springgreen !important",
+                  borderRadius: "5px",
+                },
+                "&:focus-within fieldset, &:focus-visible fieldset": {
+                  border: "2px solid springgreen !important",
+                },
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                // set the color of the label when not shrinked
+                color: "gray",
+                [`&.${inputLabelClasses.shrink}`]: {
+                  // set the color of the label when shrinked (usually when the TextField is focused)
+                  color: "springgreen",
+                },
+              },
+            }}
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <TextField
+            required //mudar o método de requerimento por uma função
             name="message"
-            placeholder="Digite sua mensagem"
-            required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            multiline
+            className="textField"
+            label="Digite sua mensagem"
+            variant="outlined"
+            sx={{ bgcolor: "#222", borderRadius: "5px" }}
+            InputProps={{
+              sx: {
+                color: "aliceblue",
+                "&:hover fieldset": {
+                  border: "2px solid springgreen !important",
+                  borderRadius: "5px",
+                },
+                "&:focus-within fieldset, &:focus-visible fieldset": {
+                  border: "2px solid springgreen !important",
+                },
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                // set the color of the label when not shrinked
+                color: "gray",
+                [`&.${inputLabelClasses.shrink}`]: {
+                  // set the color of the label when shrinked (usually when the TextField is focused)
+                  color: "springgreen",
+                },
+              },
+            }}
           />
           <ValidationError
             prefix="Message"
             field="message"
             errors={state.errors}
           />
-          {/* {currentStep} */}
           <button
             id="contact-button"
             className="contact-button"
@@ -94,14 +175,38 @@ const Contact = () => {
             value="Enviar"
             disabled={state.submitting}
           >
-            Enviar
+            Entre em contato
           </button>
-        </form>
-        <div id="thanks">
-          <p className="success-msg">Mensagem enviada!</p>
-          <p>Entrarei em contato em breve.</p>
         </div>
-      </div>
+        <div id="thanks">
+          <p>Muito Obrigado!</p>
+          <p>Entrarei em contato em breve!</p>
+          {/* <button className="contact-button" onClick={backToForm}>Voltar</button> */}         
+        </div>
+        <div className="socialmedia-wrapper">
+            <a
+              href="https://linkedin.com/in/itsimoes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon className="socialmedia-icon" />
+            </a>
+            <a
+              href="https://github.com/itsimoes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon className="socialmedia-icon" />
+            </a>
+            <a
+              href="https://twitter.com/d_rtypaw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TwitterIcon className="socialmedia-icon" />
+            </a>
+          </div>
+      </form>
     </Container>
   );
 };
