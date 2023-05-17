@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container } from "@mui/material";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const About = () => {
   return (
@@ -25,16 +26,10 @@ const About = () => {
         usuários.
       </p>
       <Button
+        className="about-button"
         component={Link}
         to="/projetos"
-        variant="contained"
-        sx={{
-          bgcolor: "rgb(44, 44, 44);",
-          color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
-          fontWeight: "560",
-          textTransform: "none",
-        }}
+        variant="contained"        
       >
         Veja alguns de meus projetos
       </Button>
@@ -45,16 +40,10 @@ const About = () => {
       </p>
       <p>Tem interesse em criarmos um projeto juntos? </p>
       <Button
+        className="about-button"
         component={Link}
         to="/contato"
         variant="contained"
-        sx={{
-          bgcolor: "rgb(44, 44, 44);",
-          color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
-          fontWeight: "560",
-          textTransform: "none",
-        }}
       >
         Vamos conversar
       </Button>
