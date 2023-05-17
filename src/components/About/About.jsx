@@ -5,7 +5,7 @@ import "./style.css";
 
 const About = () => {
   return (
-    <Container className="wrapper">
+    <Container className="about-wrapper">
       <h1 className="title">Eu desenvolvo soluções.</h1>
       <p>Me chamo Ítalo Simões, mas pode me chamar apenas de Ítalo.</p>
       <p>
