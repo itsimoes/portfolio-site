@@ -2,7 +2,12 @@ import { Button, Container } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import Avatar from "../../assets/avatar.png"
+import Avatar from "../../assets/avatar.png";
+
+//social media icons
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Home = () => {
   return (
@@ -14,21 +19,45 @@ const Home = () => {
         acessibilidade na web.
       </h3>
       <Button
+        className="home-button"
         component={Link}
         to="/sobre"
         variant="contained"
-        sx={{
-          bgcolor: "rgb(44, 44, 44);",
-          color: "springgreen",
-          ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
-          fontWeight: "560",
-          textTransform: "none",
-        }}
+        // sx={{
+        //   bgcolor: "rgb(44, 44, 44);",
+        //   color: "springgreen",
+        //   ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
+        //   fontWeight: "560",
+        //   textTransform: "none",
+        // }}
       >
         Saiba mais
       </Button>
-      <img className="avatar" src={Avatar} alt=""  />     
-      </Container>
+      <img className="avatar" src={Avatar} alt="" />
+      <div className="socialmedia-wrapper-home">
+            <a
+              href="https://linkedin.com/in/itsimoes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedInIcon className="socialmedia-icon-home" />
+            </a>
+            <a
+              href="https://github.com/itsimoes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon className="socialmedia-icon-home" />
+            </a>
+            <a
+              href="https://twitter.com/d_rtypaw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TwitterIcon className="socialmedia-icon-home" />
+            </a>
+          </div>
+    </Container>
   );
 };
 

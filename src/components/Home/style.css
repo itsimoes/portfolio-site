@@ -1,24 +1,71 @@
 .presentation {
-    font-weight: 300;  
+  font-weight: 300;
 }
 
 .resume {
-    font-weight: 400;  
-    width: 60%;
+  font-weight: 400;
+  width: 60%;
 }
 
 .avatar {
-    display: none;
-    width: 70%;    
-    margin-top: 50px;    
+  display: none;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.home-button {
+  background-color: rgb(44, 44, 44) !important;
+  color: springgreen !important;
+  height: 60px !important;
+  width: 300px;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+
+  -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.home-button:hover {
+  background-color: springgreen !important ;
+  color: rgb(44, 44, 44) !important;
+
+  -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.socialmedia-wrapper-home {
+    display: flex;      
+    align-self: flex-start;
+    margin: 25px;
+}
+.socialmedia-icon-home {    
+    color: aliceblue;
+    text-decoration: none !important;
+    font-size: 40px !important;
+    margin: 20px;    
+    
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.socialmedia-icon-home:hover {
+    color: springgreen;  
+    
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 @media screen and (max-width: 540px) {
-    .resume {        
-        width: 100%;      
-    }   
-    .avatar {
-        display: block;
-    }
+  .resume {
+    width: 100%;
   }
-  
+  .avatar {
+    display: block;
+  }
+  .socialmedia-wrapper-home {       
+    align-self: center;
+    margin: 0px;
+    margin-top: 20px;
+}
+}

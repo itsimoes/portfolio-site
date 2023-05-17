@@ -26,22 +26,22 @@ const Contact = () => {
     document.getElementById("thanks").style.display = "flex";
   }
 
-  function submitForm(e) {
-    // e.preventDefault();
-    // document.getElementById("form-content").style.display = "none";
-    // document.getElementById("thanks").style.display = "flex";
-    console.log("state = false");
-    console.log(state.succeeded);
-  }
+  // function submitForm(e) {
+  //   // e.preventDefault();
+  //   // document.getElementById("form-content").style.display = "none";
+  //   // document.getElementById("thanks").style.display = "flex";
+  //   console.log("state = false");
+  //   console.log(state.succeeded);
+  // }
 
-  function backToForm(e) {
-    e.preventDefault();
-    document.getElementById("form-content").style.display = "flex";
-    document.getElementById("thanks").style.display = "none";
+  // function backToForm(e) {
+  //   e.preventDefault();
+  //   document.getElementById("form-content").style.display = "flex";
+  //   document.getElementById("thanks").style.display = "none";
 
-    state.succeeded = false;
-    console.log("state = false");
-  }
+  //   state.succeeded = false;
+  //   console.log("state = false");
+  // }
 
   return (
     <Container className="wrapper">
