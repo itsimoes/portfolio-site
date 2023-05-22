@@ -1,6 +1,7 @@
 .about-wrapper {
   /* height: 100vh; */
   padding-top: 100px;
+  padding-bottom: 100px;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -26,4 +27,10 @@
 
   -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 540px) {
+  .about-button {
+  align-self: center;
+  }
 }
