@@ -7,6 +7,8 @@ import Pokedex from "../../assets/pokedex.png";
 import Blog from "../../assets/blog.png";
 import Swotch from "../../assets/swotch.png";
 import Jbl from "../../assets/jbl.png";
+import ReactIcon from "../../assets/logo192.png";
+import { FlightLand } from "@mui/icons-material";
 
 const Projetos = () => {
   return (
@@ -18,25 +20,20 @@ const Projetos = () => {
           desenvolvimento web. Vamos desenvolver um projeto juntos?
         </p>
         <Button
-        className="proj-button"
+          className="projetos-button"
           component={Link}
           to="/contato"
           variant="contained"
-          sx={{
-            bgcolor: "rgb(44, 44, 44);",
-            color: "springgreen",
-            ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
-            fontWeight: "560",
-            textTransform: "none",
-            width: "160px"
-          }}
         >
           Entre em contato
         </Button>
       </div>
       <div>
         <div>
-          <h4>Projetos ReactJS</h4>
+          <div className="subsec-title">
+            <img className="react-icon" src={ReactIcon} alt="" />
+            <h4 className="section-title">Projetos ReactJS</h4>
+          </div>
           <div className="card-wrapper">
             <div className="card">
               <a
@@ -62,7 +59,10 @@ const Projetos = () => {
             </div>
           </div>
 
-          <h4>Landing pages</h4>
+          <div className="subsec-title">
+            <FlightLand className="landing-icon" />
+            <h4 className="section-title">Landing pages</h4>
+          </div>
           <div className="card-wrapper">
             <div className="card">
               <a
