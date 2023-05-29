@@ -22,14 +22,7 @@ const Home = () => {
         className="home-button"
         component={Link}
         to="/sobre"
-        variant="contained"
-        // sx={{
-        //   bgcolor: "rgb(44, 44, 44);",
-        //   color: "springgreen",
-        //   ":hover": { bgcolor: "springgreen", color: "rgb(44, 44, 44);" },
-        //   fontWeight: "560",
-        //   textTransform: "none",
-        // }}
+        variant="contained"      
       >
         Saiba mais
       </Button>
